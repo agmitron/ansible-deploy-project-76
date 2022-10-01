@@ -1,0 +1,542 @@
+
+<!DOCTYPE html>
+<html lang='ru' prefix='og: https://ogp.me/ns#'>
+<head>
+<title>Проект: Деплой Docker-образов с помощью Ansible</title>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="-xNyim_qNcaQu-cDO8CsBPK_ji_-smgr64uwKFAhJxt1z71LsY62kL7aAIBQ3WIEXrM0nUWCFlzr2-NY0uIFLg" />
+<meta name="csp-nonce" />
+<link rel="icon" type="image/x-icon" href="https://cdn2.hexlet.io/assets/favicon-9213ff1fc34b4e2da96c3b3eb582b3d10180b250e993141d7928d6aa1f5647c1.ico" />
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta charset='utf-8'>
+<meta content='IE=Edge' http-equiv='X-UA-Compatible'>
+<meta content='b9d3902d34' name='verify-admitad'>
+
+<meta content='aa2vrdtq64dub8knuf83lwywit311w' name='facebook-domain-verification'>
+
+
+<link rel="stylesheet" href="https://cdn2.hexlet.io/packs/css/application-3ec17085.css" media="all" />
+
+<script>
+//<![CDATA[
+window.gon={};gon.fired_events={};gon.is_bot=false;gon.applications={};gon.current_user={"id":357773,"email":"gmitron01@gmail.com","sanitized_phone_number":"","username":"user-baab458b64660077","created_at":"2021-04-08T06:42:14.090Z","last_viewed_notification_id":null,"paid_days_count":4,"first_name":"Alexey","last_name":null,"full_name":"Alexey","birthday":null,"city":null,"text":"gmitron01@gmail.com (user-baab458b64660077)","is_guest":false,"is_mentor":null,"is_tutor":false,"is_hexlet_employee":false,"current_company":null,"can_use_paid_features":true,"current_program":"ansible-deploy","is_active_group_member":false,"url":"https://hexlet.io/u/user-baab458b64660077"};gon.token="htmMkevG-LT2Lt9FqtvHLd17wBQCTNIAkW4G1ADcBaUIBUNQNaJ74thPOMbBxgktcXd6prl8rHeRPlWkgh8nkA";gon.events=["blog_post_moderation_submitted","code_review_created","company_balance_recounted","company_created","company_updated","course_started","course_finished","exercise_started","lead_created","lesson_started","lesson_finished","lesson_unit_finished","product_payment_paid","program_started","program_finished","project_started","project_check_point_finished","project_sent_to_review","project_finished","registration_failed","show_lead_modal","signed_up","signed_up_program_started","solution_viewed","subscription_cancelled","subscription_deleted","subscription_created","subscription_paid","subscription_price_changed","subscription_product_changed","test","topic_created","topic_comment_created","tutor_assigned","tutorship_application_created","user_email_confirmed","user_email_changed","user_updated","custom_payment_paid","test_event","project_member_review_accepted","project_member_review_approved","project_member_review_declined","project_member_review_rejected","topic_assigned","topic_comment_marked_as_solution"];gon.disqus_name="hexletio";gon.locale="ru";gon.rails_env="production";gon.mobile=false;gon.google={"analytics_key":"UA-1360700-51","optimize_key":"GTM-5QDVFPF"};gon.recaptcha={"site_key_v3":"6LenGbgZAAAAAM7HbrDbn5JlizCSzPcS767c9vaY"};gon.social_signin=false;gon.typoreporter_google_form_id="1FAIpQLSeibfGq-KvWQ2Fyru-zkFFRVTLBuzXAHAoEyN1p49FtDmNoNA";gon.notifications=[{"id":3664939,"message":"Сохранили решение для \u003cb\u003eФильтры\u003c/b\u003e","url":"https://ru.hexlet.io/code_reviews/712293","human_created_at":"12 сентября 2022","icon":"\u003cspan class=\"fas fa-bicycle\"\u003e\u003c/span\u003e"},{"id":3611506,"message":"Сохранили решение для \u003cb\u003eКомпозиция вместо наследования\u003c/b\u003e","url":"https://ru.hexlet.io/code_reviews/686898","human_created_at":"22 августа 2022","icon":"\u003cspan class=\"fas fa-bicycle\"\u003e\u003c/span\u003e"},{"id":3611441,"message":"Сохранили решение для \u003cb\u003eИсключения\u003c/b\u003e","url":"https://ru.hexlet.io/code_reviews/686864","human_created_at":"22 августа 2022","icon":"\u003cspan class=\"fas fa-bicycle\"\u003e\u003c/span\u003e"},{"id":3611373,"message":"Сохранили решение для \u003cb\u003eПринцип подстановки Лисков\u003c/b\u003e","url":"https://ru.hexlet.io/code_reviews/686830","human_created_at":"22 августа 2022","icon":"\u003cspan class=\"fas fa-bicycle\"\u003e\u003c/span\u003e"},{"id":3611305,"message":"Сохранили решение для \u003cb\u003eПереопределение методов\u003c/b\u003e","url":"https://ru.hexlet.io/code_reviews/686799","human_created_at":"22 августа 2022","icon":"\u003cspan class=\"fas fa-bicycle\"\u003e\u003c/span\u003e"},{"id":3606224,"message":"Сохранили решение для \u003cb\u003eШаблонный метод\u003c/b\u003e","url":"https://ru.hexlet.io/code_reviews/683510","human_created_at":"19 августа 2022","icon":"\u003cspan class=\"fas fa-bicycle\"\u003e\u003c/span\u003e"}];gon.topics=[];gon.topic_type="project";gon.communitable_type="Project::Member::CheckPoint";gon.communitable_id=154572;gon.can_render_new_topic_box=false;gon.topics_count=0;gon.api_topics_url="https://ru.hexlet.io/api/topics/projects_sessions_members.json?check_point_id=154572\u0026member_id=25164\u0026project_id=76";gon.can_render_new_topic_box_in_my_column=true;gon.my_topics=[];gon.my_topics_count=0;gon.my_api_topics_url="https://ru.hexlet.io/api/topics/my_projects_sessions_members.json?check_point_id=154572\u0026member_id=25164\u0026project_id=76";
+//]]>
+</script>
+<script>
+  (function() {
+    const options = {
+      dsn: 'https://5e408926ab534fba9c66d8f620d1f58b@o1090356.ingest.sentry.io/6106229',
+      environment: 'production',
+      release: 'v7251',
+      initialScope: {
+        user: gon.current_user
+      },
+      ignoreErrors: [
+        'top.GLOBALS', // Random plugins/extensions
+        'VK is',
+        'VK.Retargeting is ',
+        "Can't find variable: VK",
+        'pktAnnotationHighlighter',
+        'amplitude',
+        'google_tag_manager',
+        'Unexpected keyword',
+        'illegal character',
+        'Unexpected identifier',
+        'Illegal invocation',
+        'missing = in const declaration',
+      ],
+      allowUrls: [/https?:\/\/((cdn|cdn2|ru)\.)?hexlet.io/],
+      beforeSend(event, hint) {
+        const stack = hint?.originalException?.stack || '';
+        const errorInitiator = stack
+          .split('\n')
+          .map((line) => line.trim())
+          .find((line) => line.startsWith('at'));
+        const causedByConsole = errorInitiator
+          ? errorInitiator.includes('<anonymous>:')
+          : false;
+        return causedByConsole ? null : event;
+      },
+    };
+    const key = options.dsn.replace('https://', '').split('@')[0];
+  
+    (function(c,u,v,n,p,e,z,A,w){function k(a){if(!x){x=!0;var l=u.getElementsByTagName(v)[0],d=u.createElement(v);d.src=A;d.crossOrigin="anonymous";d.addEventListener("load",function(){try{c[n]=r;c[p]=t;var b=c[e],d=b.init;b.init=function(a){for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(w[b]=a[b]);d(w)};B(a,b)}catch(g){console.error(g)}});l.parentNode.insertBefore(d,l)}}function B(a,l){try{for(var d=m.data,b=0;b<a.length;b++)if("function"===typeof a[b])a[b]();var e=!1,g=c.__SENTRY__;"undefined"!== typeof g&&g.hub&&g.hub.getClient()&&(e=!0);g=!1;for(b=0;b<d.length;b++)if(d[b].f){g=!0;var f=d[b];!1===e&&"init"!==f.f&&l.init();e=!0;l[f.f].apply(l,f.a)}!1===e&&!1===g&&l.init();var h=c[n],k=c[p];for(b=0;b<d.length;b++)d[b].e&&h?h.apply(c,d[b].e):d[b].p&&k&&k.apply(c,[d[b].p])}catch(C){console.error(C)}}for(var f=!0,y=!1,q=0;q<document.scripts.length;q++)if(-1<document.scripts[q].src.indexOf(z)){f="no"!==document.scripts[q].getAttribute("data-lazy");break}var x=!1,h=[],m=function(a){(a.e||a.p||a.f&& -1<a.f.indexOf("capture")||a.f&&-1<a.f.indexOf("showReportDialog"))&&f&&k(h);m.data.push(a)};m.data=[];c[e]=c[e]||{};c[e].onLoad=function(a){h.push(a);f&&!y||k(h)};c[e].forceLoad=function(){y=!0;f&&setTimeout(function(){k(h)})};"init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function(a){c[e][a]=function(){m({f:a,a:arguments})}});var r=c[n];c[n]=function(a,e,d,b,f){m({e:[].slice.call(arguments)});r&&r.apply(c,arguments)}; var t=c[p];c[p]=function(a){m({p:a.reason});t&&t.apply(c,arguments)};f||setTimeout(function(){k(h)})})(window,document,"script","onerror","onunhandledrejection","Sentry",key,"https://browser.sentry-cdn.com/6.17.4/bundle.min.js",options);
+  
+  })();
+</script>
+
+<script>
+  window.EventsMapping = {
+    on: function(eventName, callback) {
+      if (gon.events.indexOf(eventName) === -1) {
+        throw new Error('Undefined event name ' + eventName + '. Check gon.events.');
+      }
+  
+      if (!gon.fired_events.hasOwnProperty(eventName)) {
+        return;
+      }
+      var options = gon.fired_events[eventName];
+  
+      callback(eventName, options);
+    }
+  };
+  
+  // for custom scroll trigger in gtm
+  var onceScrollHandler = function () {
+    var events = window.dataLayer || [];
+    events.push({event: 'real_first_scroll'});
+    window.removeEventListener('scroll', onceScrollHandler, false);
+  };
+  window.addEventListener('scroll', onceScrollHandler);
+  
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WK88TH');
+</script>
+
+<script>
+  !function(){
+    var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://collect-analytics.hexlet.io/analytics/" + key + "/analytics.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+  
+    analytics.load("45dec37f43fa49e392061da423f072ca");
+    analytics.page();
+  
+    if (gon.current_user.id) {
+      var user = gon.current_user;
+  
+      analytics.identify(user.id.toString(), {
+        email: user.email,
+        first_name: user.first_name,
+        last_name: user.last_name,
+        public_name: user.public_name,
+        city: user.city,
+        birthday: user.birthday,
+        sanitized_phone_number: user.sanitized_phone_number,
+        locale: user.locale,
+        url: user.url
+      });
+    }
+  }}();
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Hexlet","url":"https://hexlet.io","sameAs":["https://www.facebook.com/Hexlet","https://www.youtube.com/user/HexletUniversity","https://twitter.com/HexletHQ","https://soundcloud.com/hexlet"],"legalName":"Hexlet Ltd.","address":"Itälahdenkatu 22 A, 00210 Helsinki, Finland","vatID":"VAT ID: FI26641607","telephone":"+7 495 085 28 38","logo":{"@type":"ImageObject","url":"https://cdn2.hexlet.io/assets/hexlet_logo-4e7b643fd7cbe42da81624aba2faa9267523b2b925d5b576536e05d061659083.png"}}</script>
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://ru.hexlet.io/lessons.rss" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ограничено ли время выполнения проекта?","acceptedAnswer":{"@type":"Answer","text":"Нет. Если вы учитесь самостоятельно или с персональным наставником, проходить проект можно в удобном для себя темпе. Независимо от формата обучения, лучше поддерживать постоянный прогресс и тратить на выполнение проекта (без учёта ревью) до 2-4 недель. Если вы учитесь в группе, этот срок поможет уложиться в сроки большинства учебных программ\n"}},{"@type":"Question","name":"Что делать, если возникли трудности?","acceptedAnswer":{"@type":"Answer","text":"Выполнение проекта сопряжено с большим количеством сложностей и некоторые шаги даются тяжело. Испытывать трудности нормально, но не стоит зависать над решением часами. Объяснить задачу другими словами, дать подсказку или указать явно на ошибку может ваш наставник. Обратитесь в чат своей группы или к персональному наставнику, если уже больше часа не можете продвинуться в решении\n\nВ процессе выполнения опирайтесь на наши [советы по прохождению проектов](https://help.hexlet.io/ru/articles/111515-sovety-po-proxozdeniyu-proektov), особенно если занимаетесь без наставника\n"}},{"@type":"Question","name":"Когда проверяется проект?","acceptedAnswer":{"@type":"Answer","text":"И автоматизированные тесты, и наставник проверяют проект в конце, когда завершён последний шаг. При этом обращаться за поддержкой можно на каждом шаге\n"}},{"@type":"Question","name":"Как долго наставник проверяет проект?","acceptedAnswer":{"@type":"Answer","text":"Обычно — до 3 рабочих дней. Наставник предупредит, если не будет успевать. Если наставник опаздывает со сроками ответов или вас не устраивает формат ответов, сообщите куратору — он поможет разрешить спорные ситуации\n"}}]}</script>
+
+</head>
+<body class='min-vh-100'>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK88TH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+<div class='container'>
+<header class='navbar navbar-light navbar-expand-lg border-bottom align-items-center py-lg-3 mb-4'>
+<a aria-hidden='true' class='navbar-brand link-dark pt-lg-0 pb-lg-2' href='/my'>
+<img width="100" alt="Хекслет" src="https://cdn2.hexlet.io/assets/logo_ru-495f05850e0095ea722a2b583565d492719579c02b0ce61d924e4f895fabf781.svg" loading="lazy" />
+</a>
+<button aria-controls='navbar-responsive' aria-expanded='false' aria-label='Меню' class='navbar-toggler border-0' data-bs-target='#navbar-responsive' data-bs-toggle='collapse'>
+<span class='navbar-toggler-icon'></span>
+</button>
+<div class='navbar-collapse collapse' id='navbar-responsive'>
+<ul class='navbar-nav algin-items-start me-auto'>
+<li><a class="nav-link px-lg-3" href="/my">Мое обучение</a></li>
+<li><a class="nav-link px-lg-3" href="/programs">Программы обучения</a></li>
+<li><a class="nav-link px-lg-3" href="/webinars">Бесплатно</a></li>
+<li><a class="nav-link px-lg-3" href="/teams">Компаниям</a></li>
+</ul>
+<ul class='navbar-nav algin-items-start'>
+<li class='me-1'>
+<a class="nav-link text-dark px-lg-2" aria-label="Поиск" href="/search"><span class='far fa-search fa-fw d-none d-lg-inline-block'></span>
+<span class='d-lg-none'>Поиск</span>
+</a></li>
+<li id='notifications'>
+<div class='dropdown disabled'>
+<button aria-label='Оповещения' class='btn btn-link dropdown-toggle nav-link px-lg-1 text-dark x-btn-focus-visible' id='navbarDropdownMenuLink'>
+<span class='far fa-bell fa-fw d-none d-lg-inline-block'></span>
+<span class='d-lg-none me-2'>Оповещения</span>
+</button>
+</div>
+</li>
+<li>
+<div class='dropdown'>
+<button aria-haspopup='true' aria-label='Профиль' class='btn btn-link dropdown-toggle nav-link px-lg-1 text-dark x-btn-focus-visible' data-bs-toggle='dropdown'>
+<span class='far fa-user fa-fw d-none d-lg-inline-block'></span>
+<span class='d-lg-none me-2'>Профиль</span>
+</button>
+<div class='dropdown-menu dropdown-menu-end'>
+<div class='dropdown-header d-flex align-items-center position-relative'>
+<div class='flex-shrink-0 me-2' style='width: 50px; height: 50px;'>
+<picture><source type="image/webp" srcset="https://cdn2.hexlet.io/derivations/image/fill_webp/50/50/eyJpZCI6ImFjYWJiOWI1YTA5OGUxMzZjZmJkNWNiNDViY2Y2NzYyIiwic3RvcmFnZSI6InN0b3JlIn0?signature=ce94da6241aaac46181d6366bacaee5697c498f95b3d0c53a7ea8822f1d25b7c"><source type="image/png" srcset="https://cdn2.hexlet.io/derivations/image/fill_png/50/50/eyJpZCI6ImFjYWJiOWI1YTA5OGUxMzZjZmJkNWNiNDViY2Y2NzYyIiwic3RvcmFnZSI6InN0b3JlIn0?signature=24d255a695f321f6c2e03c7dd58f7fd4646272a9b41ca57672e34108b2f2b0f0"><img width="50" height="50" class="rounded-circle" alt="Аватар пользователя Alexey" src="https://cdn2.hexlet.io/assets/team/you-bc72575a0e6eb39de3e28e54a8df1138beaa57cd5300061ecb5c202773131f9e.jpg" loading="lazy" /></picture>
+</div>
+<div>
+<a title="Мой профиль" class="h6 fw-bold text-dark text-decoration-none mb-0 stretched-link" href="/u/user-baab458b64660077">user-baab458b64660077</a>
+<div class='text-muted'>gmitron01@gmail.com</div>
+</div>
+</div>
+<div class='dropdown-divider'></div>
+<a class="dropdown-item" href="/account/profile/edit">Настройки</a>
+<a class="dropdown-item" href="/account/subscription">Оплата</a>
+<div class='dropdown-divider'></div>
+<a class="dropdown-item" href="/account/promo_codes/new">Промокод</a>
+<a class="dropdown-item" href="/gift">Доступ в подарок</a>
+<div class='dropdown-divider'></div>
+<a class="dropdown-item" target="_blank" rel="nofollow noopener" href="https://help.hexlet.io/ru">Помощь</a>
+<form class="button_to" method="post" action="https://ru.hexlet.io/session"><input type="hidden" name="_method" value="delete" autocomplete="off" /><button class="dropdown-item" type="submit">Выйти</button><input type="hidden" name="authenticity_token" value="gd46vLVbCW684hyd_5c6M0o0HBdUEfrYpEq4IjQq2ygH4nca8TieivZrlWRxm7sVsHDTokFmByVzl6WGUhJaIA" autocomplete="off" /></form>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</header>
+</div>
+<div class='container'>
+
+
+</div>
+
+<main class='mb-5'>
+<div class='container my-5'>
+<div class='border bg-light p-4 rounded mb-4'>
+<div class='row'>
+<div class='col-md'>
+<div class='small text-muted'>Проект</div>
+<h1>Деплой Docker-образов с помощью Ansible</h1>
+<span class='text-nowrap'>Начат: 24.09.2022</span>
+</div>
+<div class='col-md d-flex flex-column mt-3 mt-md-0 text-md-end'>
+<div>
+</div>
+<div class='text-truncate'>
+Студент: <b><a class="text-decoration-none" href="/u/user-baab458b64660077">Alexey</a></b>
+</div>
+<div class='mt-auto text-truncate'>
+<a target="_blank" class="text-decoration-none" rel="noopener noreferrer nofollow" href="https://github.com/agmitron/ansible-deploy-project-76">https://github.com/agmitron/ansible-deploy-project-76
+</a></div>
+</div>
+</div>
+</div>
+<ul class='nav nav-tabs mt-2 mb-4'>
+<li class='nav-item'>
+<a class="nav-link" target="_blank" rel="noopener" href="https://help.hexlet.io/ru/25830-proekty"><span class='fal fa-question-circle'></span>
+</a></li>
+<li class='nav-item'>
+<a class="nav-link" href="/projects/76/members/25164/settings">Подготовка
+</a></li>
+<li class='nav-item'>
+<a class="nav-link px-3" href="/projects/76/members/25164?step=1"><span class='text-success'>
+<span class='fal fa-check'></span>
+1
+</span>
+</a></li>
+<li class='nav-item'>
+<a class="nav-link px-3 active" href="/projects/76/members/25164?step=2"><span class='text-success'>
+<span class='fal fa-check'></span>
+2
+</span>
+</a></li>
+<li class='nav-item'>
+<a class="nav-link px-3" href="/projects/76/members/25164?step=3">3
+</a></li>
+<li class='nav-item'>
+<a class='nav-link disabled pe-auto' data-bs-placement='bottom' data-bs-toggle='tooltip' title='Следующий шаг откроется, когда вы завершите все предыдущие шаги'>
+4
+</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link disabled pe-auto' data-bs-placement='bottom' data-bs-toggle='tooltip' title='Следующий шаг откроется, когда вы завершите все предыдущие шаги'>
+5
+</a>
+</li>
+<li class='nav-item'>
+<a class='nav-link disabled pe-auto' data-bs-placement='bottom' data-bs-toggle='tooltip' title='Следующий шаг откроется, когда вы завершите все предыдущие шаги'>
+6
+</a>
+</li>
+<li class='nav-item'>
+<a class="nav-link disabled pe-auto" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Следующий шаг откроется, когда вы завершите все предыдущие шаги" href=""><span class='fas fa-flag-checkered'></span>
+Проверка #<b>1</b>
+</a></li>
+</ul>
+
+
+<div class='row my-1'>
+<div class='col-lg-8'>
+<div class='alert alert-secondary d-flex flex-wrap'>
+<div class='me-2'>Демонстрационный проект:</div>
+<div class='text-truncate'>
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://asciinema.org/a/v4evn7XjCdou7Yh71IG0ljb0W">https://asciinema.org/a/v4evn7XjCdou7Yh71IG0ljb0W</a>
+</div>
+</div>
+<div class='hexlet-markdown-body'>
+<h2 id="registratsiya-i-delegirovanie-domena">Регистрация и делегирование домена</h2><p>Результатом работы над проектом будет работающее приложение, развёрнутое на созданной инфраструктуре в облаке. Это приложение будет доступно по зарегстрированному домену, например <em><a href="http://example.com" target="_blank">http://example.com</a></em>. Для этого нам понадобится зарегистрировать доменное имя.</p><h3 id="registratory">Регистраторы</h3><p>Регистратор доменных имён — это организация, которая создаёт новые доменные имена или продлевает срок у уже существующих. Воспользоваться можно любым, не только из ниже перечисленных:</p>
+<ul>
+<li><a href="http://namecheap.com/" target="_blank" rel="nofollow">Namecheap</a> — отличается дешевизной, принимает оплату в долларах</li>
+<li><a href="https://reg.ru/" target="_blank" rel="nofollow">Regru</a> — регистратор доменов для российских пользователей. Оплата у рублях</li>
+</ul>
+<h3 id="ssylki">Ссылки</h3>
+<ul>
+<li><a href="https://ru.wikipedia.org/wiki/Делегирование_домена" target="_blank" rel="nofollow">Делегирование домена</a></li>
+</ul>
+<h3 id="zadachi">Задачи</h3>
+<ol>
+<li>Создайте аккаунт у регистратора доменов</li>
+<li>Для регистрации доменного имени выберите доменную зону и свободный домен. Доменная зона не имеет значения, поэтому можно выбрать самую дешёвую (Например <em>.club</em>)</li>
+<li>Проверьте доступность выбранного имени домена и зарегистрируйте его, следуя указаниям на сайте</li>
+<li>Перед тем как делегировать домен облачному провайдеру, вначале необходимо создать записи вашего домена на DNS сервере. Это нужно сделать в панели управления. После добавления домена вы получите адреса NS-серверов, которые понадобятся далее</li>
+<li>Создайте A-запись для вашего домена с IP-адресом балансировщика</li>
+<li>Делегируйте домен на облачному провайдеру. Для этого на странице управления доменом укажите NS-сервера, которые получили ранее. Процесс обновления DNS записей может занимать от нескольких часов до суток</li>
+<li>Если все сделано верно, ваш проект будет доступен по имени домена <em><a href="http://example.com" target="_blank">http://example.com</a></em></li>
+</ol>
+
+</div>
+<hr class='my-5'>
+<h3 class='mb-4'>Вопросы и ответы</h3>
+<div class='mb-4'>
+<div class='h5 mb-2'>Ограничено ли время выполнения проекта?</div>
+<p>Нет. Если вы учитесь самостоятельно или с персональным наставником, проходить проект можно в удобном для себя темпе. Независимо от формата обучения, лучше поддерживать постоянный прогресс и тратить на выполнение проекта (без учёта ревью) до 2-4 недель. Если вы учитесь в группе, этот срок поможет уложиться в сроки большинства учебных программ</p>
+</div>
+<div class='mb-4'>
+<div class='h5 mb-2'>Что делать, если возникли трудности?</div>
+<p>Выполнение проекта сопряжено с большим количеством сложностей и некоторые шаги даются тяжело. Испытывать трудности нормально, но не стоит зависать над решением часами. Объяснить задачу другими словами, дать подсказку или указать явно на ошибку может ваш наставник. Обратитесь в чат своей группы или к персональному наставнику, если уже больше часа не можете продвинуться в решении</p><p>В процессе выполнения опирайтесь на наши <a href="https://help.hexlet.io/ru/articles/111515-sovety-po-proxozdeniyu-proektov" target="_blank">советы по прохождению проектов</a>, особенно если занимаетесь без наставника</p>
+</div>
+<div class='mb-4'>
+<div class='h5 mb-2'>Когда проверяется проект?</div>
+<p>И автоматизированные тесты, и наставник проверяют проект в конце, когда завершён последний шаг. При этом обращаться за поддержкой можно на каждом шаге</p>
+</div>
+<div class='mb-4'>
+<div class='h5 mb-2'>Как долго наставник проверяет проект?</div>
+<p>Обычно — до 3 рабочих дней. Наставник предупредит, если не будет успевать. Если наставник опаздывает со сроками ответов или вас не устраивает формат ответов, сообщите куратору — он поможет разрешить спорные ситуации</p>
+</div>
+
+</div>
+<div class='col-lg-4'>
+<div class='text-center mb-3'>
+<p class='fw-bold text-success'>Завершено</p>
+</div>
+
+</div>
+</div>
+<hr class='my-5'>
+<h5 class='mb-4 text-center' id='community-question'>Обсуждение</h5>
+<div class='row justify-content-center hexlet-community'>
+<div class='col-12 col-lg-10 col-xl-9 mx-auto'>
+<ul class='nav nav-tabs mb-3 justify-content-center' id='myTab' role='tablist'>
+<li class='nav-item'>
+<a id="other-question-tab" class="nav-link active" role="tab" data-bs-toggle="tab" aria-controls="other-question" aria-selected="true" href="#other-question">Вопросы других участников</a>
+</li>
+<li class='nav-item'>
+<a id="my-question-tab" class="nav-link" role="tab" data-bs-toggle="tab" aria-controls="my-question" aria-selected="false" href="#my-question">Мои вопросы</a>
+</li>
+</ul>
+<div class='tab-content' id='my-tab-content'>
+<div aria-labelledby='other-question-tab' class='tab-pane fade show active' id='other-question' role='tabpanel'>
+<div id='community-box'></div>
+<div class='py-2'>
+<img width="500px" class="d-block mx-auto img-fluid" src="https://cdn2.hexlet.io/assets/empty-lists/9-0ee427b95aedfd6d8db146929665666d71ef2ed9f304280b051be03635edc783.png" loading="lazy" />
+</div>
+</div>
+<div aria-labelledby='my-question-tab' class='tab-pane fade' id='my-question' role='tabpanel'>
+<div id='community-box-my-topics'></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</main>
+<footer class='bg-light border-top py-4 mt-auto'>
+<div class='container'>
+<div class='row gy-2 row-cols-1 row-cols-sm-2 row-cols-md-3 row pt-3'>
+<div class='col'>
+<ul class='nav flex-column align-items-start'>
+<li>
+<a class="nav-link py-1 text-muted px-0 pt-0" href="/pages/about">О нас</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" target="_blank" rel="noopener noreferrer nofollow" href="https://notion.so/c6406ed8890747e690d32b050faf42c2">Карьера в Хекслете</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" rel="noopener noreferrer nofollow" href="https://hexlet.printdirect.ru/?partner_id=615497">Магазин мерча</a>
+</li>
+</ul>
+<div class='fw-bold mt-3 mb-2'>Документы</div>
+<ul class='nav flex-column align-items-start'>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/pages/tos">Условия использования</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/pages/personal_data">Соглашение об обработке ПД</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/pages/offer">Публичная оферта</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/pages/promo">Акции</a>
+</li>
+</ul>
+<ul class='nav flex-column align-items-start mt-3'>
+<li>
+<span class='lead fw-normal'>
+<a class="text-muted text-decoration-none" href="tel:8%20800%20100%2022%2047">8 800 100 22 47</a>
+</span>
+<span class='text-muted'>бесплатно по РФ</span>
+</li>
+<li>
+<span class='lead fw-normal'>
+<a class="text-muted text-decoration-none" href="tel:%2B7%20495%20085%2028%2038">+7 495 085 28 38</a>
+</span>
+<span class='text-muted'>бесплатно по Москве</span>
+</li>
+</ul>
+<p class='mt-3 text-muted'>
+<span class='d-block'>ООО «Хекслет Рус»</span>
+<span class='d-block'>432071, г. Ульяновск,</span>
+<span class='d-block'>пр-т Нариманова, дом 1Г, оф. 23</span>
+<span class='d-block'>ОГРН 1217300010476</span>
+</p>
+</div>
+<div class='col'>
+<div class='fw-bold mb-2'>Учиться</div>
+<ul class='nav flex-column align-items-start'>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/programs">Профессии с нуля</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/courses">Все курсы</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://premium.hexlet.io">Индивидуальное обучение</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/teams">Корпоративное обучение</a>
+</li>
+</ul>
+<div class='fw-bold mt-3 mb-2'>Читать</div>
+<ul class='nav flex-column align-items-start'>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/blog/categories/success">Истории успеха</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/testimonials">Отзывы студентов</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/blog">Блог</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/community">Вопросы по урокам</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="https://ru.hexlet.io/pages/recommended-books">Рекомендуемые книги</a>
+</li>
+</ul>
+<div class='fw-bold mt-3 mb-3'>Подписаться</div>
+<ul class='list-unstyled h3 text-start d-flex flex-wrap'>
+<li class='me-4 mb-2'>
+<a aria-label="Slack" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://slack-ru.hexlet.io/"><span class='fab fa-slack fa-1x'></span>
+</a></li>
+<li class='me-4 mb-2'>
+<a aria-label="Youtube" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://www.youtube.com/user/HexletUniversity"><span class='fab fa-youtube fa-1x'></span>
+</a></li>
+<li class='me-4 mb-2'>
+<a aria-label="Telegram" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://t.me/hexlet_ru"><span class='fab fa-telegram fa-1x'></span>
+</a></li>
+<li class='me-4 mb-2'>
+<a aria-label="ВКонтакте" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://vk.com/hexlet"><span class='fab fa-vk fa-1x'></span>
+</a></li>
+<li class='me-4 mb-2'>
+<a aria-label="Twitter" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://twitter.com/HexletHQ"><span class='fab fa-twitter fa-1x'></span>
+</a></li>
+</ul>
+</div>
+<div class='col'>
+<div class='fw-bold mb-2'>Помощь</div>
+<ul class='nav flex-column align-items-start'>
+<li>
+<a class="nav-link py-1 text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://help.hexlet.io/ru">Справка</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" href="/qna">Вопросы и ответы</a>
+</li>
+<li>
+<a rel="nofollow" class="nav-link py-1 text-muted px-0" href="mailto:support@hexlet.io">support@hexlet.io</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://github.com/Hexlet/proposals">Улучшить Хекслет</a>
+</li>
+</ul>
+<div class='fw-bold mt-3 mb-2'>Наши проекты</div>
+<ul class='nav flex-column align-items-start'>
+<li>
+<a class="nav-link py-1 text-muted px-0" target="_blank" rel="noopener noreferrer nofollow" href="https://hexly.ru/">Хекслет Колледж</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://ru.code-basics.com/">Code Basics</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://codebattle.hexlet.io">Codebattle</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://guides.hexlet.io/ru/">Hexlet Guides</a>
+</li>
+<li>
+<a class="nav-link py-1 text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://cv.hexlet.io/">Хекслет-резюме</a>
+</li>
+</ul>
+<div class='dropdown mt-3'>
+<button aria-haspopup class='btn btn-link dropdown-toggle text-body text-decoration-none p-0 x-btn-focus-visible' data-bs-toggle='dropdown'>
+<span class='fa-solid fa-globe me-1'></span>
+<span class='fw-bold'>Язык</span>
+</button>
+<ul class='dropdown-menu py-1'>
+<li>
+<a class="dropdown-item" href="/locale/switch?locale=en"><img width="22" alt="Переключить язык на en" class="my-auto me-1" src="https://cdn2.hexlet.io/assets/flag-en-f0b48c6562bb27879fbd685ece0133271ea043384dd9793843c246f862ac7cc1.svg" loading="lazy" />
+<span class='my-auto text-muted'>English</span>
+</a></li>
+<li>
+<a class="dropdown-item bg-primary bg-opacity-10" href="/locale/switch?locale=ru"><img width="22" alt="Переключить язык на ru" class="my-auto me-1" src="https://cdn2.hexlet.io/assets/flag-ru-593864ce87ae202b2c2e9393b2a6cf9384ac9cbb1c70632f4c6eeca34341483e.svg" loading="lazy" />
+<span class='my-auto text-muted'>Русский</span>
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+
+<script src="https://cdn2.hexlet.io/packs/js/runtime-c46c8fa475519161c359.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/21-a43d8d9af57bfd3ef2d7.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/2172-4a535541f119699ee48b.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/1001-38e2864fb832427571bc.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/4184-2ce3093d70804a567a15.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/594-a32496d83344ad749e0e.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/3594-1201105d2b1baecc29c0.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/application-c9ccc5bef9d53f39f553.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/3935-93a8079d50a7b9f75886.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/2053-9da4292a6d02d5850303.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/6042-8308a43485a2899f4eec.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/5813-39ac9d0366c6ea572f62.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/5014-2397abca3b2d0ed6926d.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/4406-34a6b85d99841c0a4b4e.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/7206-97e28a10987b2a0fc0f5.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/263-01adf006611f34db3b8c.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/5091-e6b74d243f1d1ae464e1.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/1135-f6a0edfda3e2021ceda4.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/9945-f0f1eab04d5c2c5e1198.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/4283-a2fe2bef139dcee20e7d.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/3288-32c3e6904ff16673b8f6.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/community-b9c7054388cfeb9c816f.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/community_my_topics-30ea9266c3aa1d5de093.js" crossorigin="anonymous" defer="defer"></script>
+<script src="https://cdn2.hexlet.io/packs/js/notifications-be35cdcae335ce437e09.js" crossorigin="anonymous" defer="defer"></script>
+
+
+
+</body>
+</html>
